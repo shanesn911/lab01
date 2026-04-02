@@ -88,7 +88,8 @@ double IntList::average() const {
 // inserts value as new node at beginning of list
 void IntList::push_front(int value) {
     // IMPLEMENT
-    Node *new_node = new Node(value);
+    Node *new_node = new Node;
+    new_node->info = value;
     new_node->next = head;
     head = new_node;
     if (!tail) {
@@ -100,7 +101,8 @@ void IntList::push_front(int value) {
 // append value at end of list
 void IntList::push_back(int value) {
     // IMPLEMENT
-    Node *new_node = new Node(value);
+    Node *new_node = new Node;
+    new_node->info = value;
     new_node->next = nullptr;
     if (!tail) {
         head = new_node;
