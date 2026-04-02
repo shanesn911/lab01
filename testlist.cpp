@@ -2,6 +2,7 @@
 // Tests intlist.cpp
 
 #include "intlist.h"
+#include "intlist.cpp"
 
 #include <cstdlib> // provides atoi
 #include <iostream>
